@@ -1,0 +1,32 @@
+.Event_list{
+    display: grid;
+    gap: 30px;
+}
+.Event_card{
+    padding: 30px;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius-12);
+    height: 50vh;
+}
+.Event_card .title{
+    text-align: center;
+    margin-block-end: 15px;
+}
+.Event_card_child{
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 90%;
+}
+.event_items{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 30% 50% 20%;
+    margin: 1.2rem 0;
+    border-bottom: 1px solid var(--platinum);
+    padding: 1.2rem;
+}
+@media (min-width: 992px) {
+    .Event_list{
+        grid-template-columns: 1fr 1fr;
+    }
+}
