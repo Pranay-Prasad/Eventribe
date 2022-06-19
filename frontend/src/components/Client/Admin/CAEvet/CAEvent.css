@@ -17,4 +17,5 @@
 }
 .new_event_btn:hover{
     border: 1px solid var(--platinum);
+    /* test */
 }
