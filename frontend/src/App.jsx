@@ -4,12 +4,12 @@ import {
   Route,
   Routes
 } from "react-router-dom";
-// import Main from './Main';
 import Client from './Client';
 
 import users from './User.json'
 import RegisterForm from './RegisterForm';
 import Main from './Main';
+import CAdmin from './components/Client/Admin/CAdmin';
 function App() {
   return (
     <>
@@ -18,6 +18,7 @@ function App() {
           <Route exact path='/' element={<Main/>}/>
           <Route exact path='/register' element={<RegisterForm/>}/>
           {users.map((user)=><Route exact path={'/' +user.url} key={user._id} element={<Client user={user} />}/>)}
+          {users.map((user)=><Route exact path={'/' +user.url + '/Admin'} key={user._id} element={<CAdmin user={user} />}/>)}
         </Routes>
       </Router>
     </>

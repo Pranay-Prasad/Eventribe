@@ -30,6 +30,7 @@ const Navbar = (props) => {
                 <li className='nav-item' ><a href="#clientabout">About</a></li>
                 <li className='nav-item' ><a href="#events">Events</a></li>
                 <li className='nav-item' ><a href="#footer">Contact</a></li>
+                <li className='nav-item' ><a href={"/"+user.url+"/Admin"}>Admin</a></li>
             </ul>
         </nav>
     )
