@@ -1,0 +1,51 @@
+table, th, td {
+    border:1px solid black;
+}
+.Table_section{
+    height: 100vh;
+}
+.Table_section .table_main{
+    height: 100%;
+    width: 100%;
+    margin: 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.table_container{
+    height: 60%;
+    width: 70%;
+    border: 1px solid var(--platinum);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    padding: 1.5rem;
+    margin: 1.2rem;
+}
+.table_container::-webkit-scrollbar{
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--platinum);
+}
+.table_container::-webkit-scrollbar-thumb{
+    background-color: rgb(67, 67, 67);
+}
+table{
+    width: 100%;
+    height: 100%;
+}
+th,td{
+    padding: 2rem;
+    min-width: 10vh;
+}
+.download-table-xls-button{
+    padding: 1.5rem;
+    border: 1px solid var(--platinum);
+    margin: 1.5rem;
+}
+.download-table-xls-button:hover{
+    box-shadow: var(--shadow);
+}
